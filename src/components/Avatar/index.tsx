@@ -5,6 +5,10 @@ export const Avatar = () => {
 
   const context = useAppContext();
 
+  if (!context.user) {
+    return <h1>Loading 🥺 ...</h1>
+  }
+
   return(
     <div
       style={{
